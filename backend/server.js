@@ -11,14 +11,14 @@ app.use(express.json());
 
 // Import Models to ensure they are registered
 require('./models/User');
-require('./models/UnEmployee');
+require('./models/NonEmployee');
 require('./models/Quarter');
 require('./models/Allotment');
 require('./models/Bill');
 require('./models/Complaint');
 
 const authRoutes = require('./routes/auth');
-const unEmployeeRoutes = require('./routes/unEmployees');
+const nonEmployeeRoutes = require('./routes/nonEmployees');
 const quarterRoutes = require('./routes/quarters');
 const allotmentRoutes = require('./routes/allotments');
 const billRoutes = require('./routes/bills');
@@ -26,7 +26,7 @@ const complaintRoutes = require('./routes/complaints');
 
 // Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/unEmployees', unEmployeeRoutes);
+app.use('/api/nonEmployees', nonEmployeeRoutes);
 app.use('/api/quarters', quarterRoutes);
 app.use('/api/allotments', allotmentRoutes);
 app.use('/api/bills', billRoutes);

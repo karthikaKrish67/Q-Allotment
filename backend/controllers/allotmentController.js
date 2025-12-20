@@ -1,22 +1,38 @@
 const Allotment = require('../models/Allotment');
 const Quarter = require('../models/Quarter');
-const UnEmployee = require('../models/UnEmployee');
+const NonEmployee = require('../models/NonEmployee');
+
+// Get all allotments
+exports.getAllAllotments = async (req, res) => {
+    try {
+        const allotments = await Allotment.findAll({
+            include: [
+                { model: Quarter, attributes: ['id', 'quarterNumber', 'block', 'type', 'status'] },
+                { model: NonEmployee, attributes: ['id', 'name', 'contact'] }
+            ],
+            order: [['createdAt', 'DESC']]
+        });
+        res.json(allotments);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch allotments', details: error.message });
+    }
+};
 
 exports.allotQuarter = async (req, res) => {
-    const { unEmployeeId, quarterId } = req.body;
+    const { nonEmployeeId, quarterId } = req.body;
     try {
         // Check if Quarter is Vacant
         const quarter = await Quarter.findByPk(quarterId);
         if (!quarter) return res.status(404).json({ error: 'Quarter not found' });
         if (quarter.status === 'Occupied') return res.status(400).json({ error: 'Quarter is already occupied' });
 
-        // Check if UnEmployee exists
-        const unEmployee = await UnEmployee.findByPk(unEmployeeId);
-        if (!unEmployee) return res.status(404).json({ error: 'UnEmployee not found' });
+        // Check if NonEmployee exists
+        const nonEmployee = await NonEmployee.findByPk(nonEmployeeId);
+        if (!nonEmployee) return res.status(404).json({ error: 'NonEmployee not found' });
 
         // Create Allotment
         const allotment = await Allotment.create({
-            UnEmployeeId: unEmployeeId,
+            NonEmployeeId: nonEmployeeId,
             QuarterId: quarterId,
             status: 'Active'
         });

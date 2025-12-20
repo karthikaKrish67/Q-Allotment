@@ -12,9 +12,13 @@ const Quarter = sequelize.define('Quarter', {
         allowNull: false,
         unique: true
     },
+    block: {
+        type: DataTypes.STRING,
+        allowNull: false // Block A, B, C, D, E
+    },
     type: {
         type: DataTypes.STRING,
-        allowNull: false // Type I, II, III
+        allowNull: false // Type I, II, III, IV
     },
     status: {
         type: DataTypes.STRING,

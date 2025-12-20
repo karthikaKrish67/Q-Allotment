@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-const UnEmployee = sequelize.define('UnEmployee', {
+const NonEmployee = sequelize.define('NonEmployee', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -25,4 +25,4 @@ const UnEmployee = sequelize.define('UnEmployee', {
     }
 });
 
-module.exports = UnEmployee;
+module.exports = NonEmployee;

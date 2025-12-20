@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
-const UnEmployee = require('./UnEmployee');
+const NonEmployee = require('./NonEmployee');
 const Quarter = require('./Quarter');
 
 const Allotment = sequelize.define('Allotment', {
@@ -19,8 +19,8 @@ const Allotment = sequelize.define('Allotment', {
     }
 });
 
-Allotment.belongsTo(UnEmployee);
-UnEmployee.hasOne(Allotment); // Assuming one active allotment per person for simplicity? Or hasMany? Let's say hasMany for history.
+Allotment.belongsTo(NonEmployee);
+NonEmployee.hasOne(Allotment); // Assuming one active allotment per person for simplicity? Or hasMany? Let's say hasMany for history.
 
 Allotment.belongsTo(Quarter);
 Quarter.hasMany(Allotment);

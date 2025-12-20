@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
-const UnEmployee = require('./UnEmployee');
+const NonEmployee = require('./NonEmployee');
 
 const Bill = sequelize.define('Bill', {
     id: {
@@ -30,7 +30,7 @@ const Bill = sequelize.define('Bill', {
     }
 });
 
-Bill.belongsTo(UnEmployee);
-UnEmployee.hasMany(Bill);
+Bill.belongsTo(NonEmployee);
+NonEmployee.hasMany(Bill);
 
 module.exports = Bill;

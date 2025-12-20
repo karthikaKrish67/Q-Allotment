@@ -1,16 +1,16 @@
 const Complaint = require('../models/Complaint');
-const UnEmployee = require('../models/UnEmployee');
+const NonEmployee = require('../models/NonEmployee');
 
 exports.createComplaint = async (req, res) => {
     try {
-        const { unEmployeeId, description } = req.body;
+        const { nonEmployeeId, description } = req.body;
 
-        // Verify UnEmployee exists (usually from logged in user, but simplified here)
-        const unEmployee = await UnEmployee.findByPk(unEmployeeId);
-        if (!unEmployee) return res.status(404).json({ error: 'UnEmployee not found' });
+        // Verify NonEmployee exists (usually from logged in user, but simplified here)
+        const nonEmployee = await NonEmployee.findByPk(nonEmployeeId);
+        if (!nonEmployee) return res.status(404).json({ error: 'NonEmployee not found' });
 
         const complaint = await Complaint.create({
-            UnEmployeeId: unEmployeeId,
+            NonEmployeeId: nonEmployeeId,
             description,
             status: 'Pending'
         });
@@ -23,7 +23,7 @@ exports.createComplaint = async (req, res) => {
 
 exports.getAllComplaints = async (req, res) => {
     try {
-        const complaints = await Complaint.findAll({ include: [UnEmployee] });
+        const complaints = await Complaint.findAll({ include: [NonEmployee] });
         res.json(complaints);
     } catch (error) {
         res.status(500).json({ error: 'Failed to fetch complaints' });

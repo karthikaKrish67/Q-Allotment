@@ -1,19 +1,19 @@
 const Bill = require('../models/Bill');
-const UnEmployee = require('../models/UnEmployee');
+const NonEmployee = require('../models/NonEmployee');
 const Allotment = require('../models/Allotment');
 
 exports.generateBill = async (req, res) => {
     try {
-        const { unEmployeeId, month, rentAmount, maintenanceAmount } = req.body;
+        const { nonEmployeeId, month, rentAmount, maintenanceAmount } = req.body;
 
-        // Verify UnEmployee exists
-        const unEmployee = await UnEmployee.findByPk(unEmployeeId);
-        if (!unEmployee) return res.status(404).json({ error: 'UnEmployee not found' });
+        // Verify NonEmployee exists
+        const nonEmployee = await NonEmployee.findByPk(nonEmployeeId);
+        if (!nonEmployee) return res.status(404).json({ error: 'NonEmployee not found' });
 
         const totalAmount = parseFloat(rentAmount) + parseFloat(maintenanceAmount);
 
         const bill = await Bill.create({
-            UnEmployeeId: unEmployeeId,
+            NonEmployeeId: nonEmployeeId,
             month,
             rentAmount,
             maintenanceAmount,
@@ -29,13 +29,13 @@ exports.generateBill = async (req, res) => {
 
 exports.getBills = async (req, res) => {
     try {
-        // If query param unEmployeeId is present, filter by it
-        const { unEmployeeId } = req.query;
-        const whereClause = unEmployeeId ? { UnEmployeeId: unEmployeeId } : {};
+        // If query param nonEmployeeId is present, filter by it
+        const { nonEmployeeId } = req.query;
+        const whereClause = nonEmployeeId ? { NonEmployeeId: nonEmployeeId } : {};
 
         const bills = await Bill.findAll({
             where: whereClause,
-            include: [UnEmployee]
+            include: [NonEmployee]
         });
         res.json(bills);
     } catch (error) {

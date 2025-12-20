@@ -6,7 +6,7 @@ import Sidebar from './components/Sidebar';
 import { AuthProvider } from './context/AuthContext';
 
 import Dashboard from './pages/Dashboard';
-import UnEmployees from './pages/UnEmployees';
+import NonEmployees from './pages/NonEmployees';
 import Quarters from './pages/Quarters';
 
 import Billing from './pages/Billing';
@@ -17,7 +17,7 @@ const Layout = ({ children }) => (
     <Sidebar />
     <div className="flex-1 flex flex-col overflow-hidden">
       <Navbar />
-      <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
+      <main className="flex-1 overflow-x-hidden overflow-y-auto">
         {children}
       </main>
     </div>
@@ -32,7 +32,7 @@ function App() {
 
         <Route element={<ProtectedRoute />}>
           <Route path="/" element={<Layout><Dashboard /></Layout>} />
-          <Route path="/unemployees" element={<Layout><UnEmployees /></Layout>} />
+          <Route path="/nonemployees" element={<Layout><NonEmployees /></Layout>} />
           <Route path="/quarters" element={<Layout><Quarters /></Layout>} />
           <Route path="/billing" element={<Layout><Billing /></Layout>} />
           <Route path="/complaints" element={<Layout><Complaints /></Layout>} />

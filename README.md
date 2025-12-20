@@ -4,7 +4,7 @@ A full-stack application for managing quarters allotment, billing, and complaint
 
 ## Features
 - **Admin Dashboard**: Visual analytics of quarters, residents, and complaints.
-- **UnEmployee Management**: Register and manage residents.
+- **NonEmployee Management**: Register and manage residents.
 - **Quarters Management**: Add quarters, manage types, and allot to residents.
 - **Billing**: Generate monthly bills and track payments.
 - **Complaints**: Maintenance complaint tracking system.
@@ -63,8 +63,8 @@ You will need to register a user via Postman or Curl first, or use the registrat
 
 ## API Documentation
 - **Auth**: `/api/auth/login`, `/api/auth/register`
-- **UnEmployees**: `/api/unEmployees` (CRUD)
+- **NonEmployees**: `/api/NonEmployees` (CRUD)
 - **Quarters**: `/api/quarters`, `/api/quarters` (CRUD)
-- **Allotment**: `/api/allotments/allot`, `/api/allotments/cancel/:id`
+- **Allotment**: `/api/allotments/allot`, `/api/allotments/cancel/:id` (CRUD)
 - **Bills**: `/api/bills` (GET, POST), `/api/bills/:id/pay` (PUT)
 - **Complaints**: `/api/complaints` (GET, POST), `/api/complaints/:id/status` (PUT)

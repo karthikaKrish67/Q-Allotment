@@ -1,0 +1,135 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "$2b$10$f7blAgbmNgHsYL2LxzTgK.e3aiGUrkqPRPUTnEgCFRC/XrRs2/iHe",
+      "role": "admin",
+      "createdAt": "2025-12-13T18:01:01.706Z",
+      "updatedAt": "2025-12-13T18:01:01.706Z"
+    }
+  ],
+  "quarters": [
+    {
+      "id": 1,
+      "quarterNumber": "R1001",
+      "type": "Type I",
+      "status": "Occupied",
+      "createdAt": "2025-12-15T06:48:39.578Z",
+      "updatedAt": "2025-12-15T06:48:53.627Z"
+    },
+    {
+      "id": 2,
+      "quarterNumber": "19C",
+      "type": "Type I",
+      "status": "Occupied",
+      "createdAt": "2025-12-15T07:17:08.186Z",
+      "updatedAt": "2025-12-15T07:18:05.039Z"
+    },
+    {
+      "id": 3,
+      "quarterNumber": "Q-101",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-16T10:35:31.137Z",
+      "updatedAt": "2025-12-16T10:35:31.137Z"
+    },
+    {
+      "id": 4,
+      "quarterNumber": "Q-231",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-16T10:39:46.266Z",
+      "updatedAt": "2025-12-16T10:39:46.266Z"
+    },
+    {
+      "id": 5,
+      "quarterNumber": "18B",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-18T07:12:14.353Z",
+      "updatedAt": "2025-12-18T07:12:14.353Z"
+    }
+  ],
+  "unEmployees": [
+    {
+      "id": 2,
+      "name": "Karthy",
+      "privatePartyCode": "R1001",
+      "address": "block 10,near TA office",
+      "phoneNumber": "9632145879",
+      "createdAt": "2025-12-15T06:55:15.753Z",
+      "updatedAt": "2025-12-15T06:55:15.753Z"
+    }
+  ],
+  "allotments": [
+    {
+      "id": 1,
+      "allotmentDate": "2025-12-15T06:48:53.620Z",
+      "status": "Active",
+      "createdAt": "2025-12-15T06:48:53.620Z",
+      "updatedAt": "2025-12-15T06:48:53.620Z",
+      "UnEmployeeId": null,
+      "QuarterId": 1
+    },
+    {
+      "id": 2,
+      "allotmentDate": "2025-12-15T07:18:05.031Z",
+      "status": "Active",
+      "createdAt": "2025-12-15T07:18:05.032Z",
+      "updatedAt": "2025-12-15T07:18:05.032Z",
+      "UnEmployeeId": 2,
+      "QuarterId": 2
+    }
+  ],
+  "bills": [
+    {
+      "id": 1,
+      "month": "december 2025",
+      "rentAmount": 3000,
+      "maintenanceAmount": 100,
+      "totalAmount": 3100,
+      "isPaid": true,
+      "createdAt": "2025-12-15T06:49:40.972Z",
+      "updatedAt": "2025-12-15T06:49:45.593Z",
+      "UnEmployeeId": null
+    },
+    {
+      "id": 2,
+      "month": "DEC 2025",
+      "rentAmount": 2500,
+      "maintenanceAmount": 100,
+      "totalAmount": 2600,
+      "isPaid": false,
+      "createdAt": "2025-12-15T07:21:05.000Z",
+      "updatedAt": "2025-12-15T07:21:05.000Z",
+      "UnEmployeeId": 2
+    }
+  ],
+  "complaints": [
+    {
+      "id": 1,
+      "description": "Electricity issue",
+      "status": "Completed",
+      "createdAt": "2025-12-15T06:56:01.688Z",
+      "updatedAt": "2025-12-15T06:59:22.694Z",
+      "UnEmployeeId": 2
+    },
+    {
+      "id": 2,
+      "description": "water supply issue",
+      "status": "Completed",
+      "createdAt": "2025-12-15T06:58:46.609Z",
+      "updatedAt": "2025-12-15T07:19:17.411Z",
+      "UnEmployeeId": 2
+    },
+    {
+      "id": 3,
+      "description": "doors damaged",
+      "status": "Pending",
+      "createdAt": "2025-12-18T07:35:03.716Z",
+      "updatedAt": "2025-12-18T07:35:03.716Z",
+      "UnEmployeeId": 2
+    }
+  ]
+}
