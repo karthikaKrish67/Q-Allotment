@@ -9,8 +9,7 @@ const Quarter = sequelize.define('Quarter', {
     },
     quarterNumber: {
         type: DataTypes.STRING,
-        allowNull: false,
-        unique: true
+        allowNull: false
     },
     block: {
         type: DataTypes.STRING,

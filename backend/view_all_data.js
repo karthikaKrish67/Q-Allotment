@@ -1,30 +1,32 @@
 const fs = require('fs');
-const sequelize = require('./config/database');
+const path = require('path');
 const User = require('./models/User');
+const NonEmployee = require('./models/NonEmployee');
 const Quarter = require('./models/Quarter');
-const UnEmployee = require('./models/UnEmployee');
 const Allotment = require('./models/Allotment');
 const Bill = require('./models/Bill');
 const Complaint = require('./models/Complaint');
+const sequelize = require('./config/database');
+require('dotenv').config();
 
-async function showData() {
-    const data = {};
+async function viewAllData() {
     try {
         await sequelize.authenticate();
-
-        data.users = await User.findAll();
-        data.quarters = await Quarter.findAll();
-        data.unEmployees = await UnEmployee.findAll();
-        data.allotments = await Allotment.findAll();
-        data.bills = await Bill.findAll();
-        data.complaints = await Complaint.findAll();
-
+        const data = {
+            users: await User.findAll(),
+            quarters: await Quarter.findAll(),
+            nonEmployees: await NonEmployee.findAll(),
+            allotments: await Allotment.findAll(),
+            bills: await Bill.findAll(),
+            complaints: await Complaint.findAll()
+        };
         fs.writeFileSync('db_dump.json', JSON.stringify(data, null, 2));
         console.log('Data written to db_dump.json');
-
-    } catch (err) {
-        console.error('Error:', err);
+    } catch (error) {
+        console.error('Error viewing data:', error);
+    } finally {
+        process.exit();
     }
 }
 
-showData();
+viewAllData();

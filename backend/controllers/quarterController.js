@@ -3,6 +3,16 @@ const Quarter = require('../models/Quarter');
 exports.createQuarter = async (req, res) => {
     try {
         const { quarterNumber, block, type, status } = req.body;
+
+        // Check for duplicate: (Block + Type + Quarter Number)
+        const existing = await Quarter.findOne({
+            where: { quarterNumber, block, type }
+        });
+
+        if (existing) {
+            return res.status(400).json({ error: 'This quarter already exists in the selected block and type.' });
+        }
+
         const quarter = await Quarter.create({ quarterNumber, block, type, status });
         res.status(201).json(quarter);
     } catch (error) {

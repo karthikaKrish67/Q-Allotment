@@ -1,14 +1,32 @@
 const NonEmployee = require('../models/NonEmployee');
 const Allotment = require('../models/Allotment');
 const Quarter = require('../models/Quarter');
+const User = require('../models/User');
+const bcrypt = require('bcryptjs');
 
 exports.createNonEmployee = async (req, res) => {
     try {
         const { name, privatePartyCode, address, phoneNumber } = req.body;
+
+        // 1. Create the NonEmployee record
         const nonEmployee = await NonEmployee.create({ name, privatePartyCode, address, phoneNumber });
+
+        // 2. Automatically create a User account for this resident
+        // The username will be the privatePartyCode, and we'll use a default hashed password.
+        // Residents primarily login via Phone + OTP (simulated), but the system requires a User record.
+        const defaultPassword = 'user123';
+        const hashedPassword = await bcrypt.hash(defaultPassword, 10);
+
+        await User.create({
+            username: privatePartyCode,
+            password: hashedPassword,
+            role: 'user'
+        });
+
         res.status(201).json(nonEmployee);
     } catch (error) {
-        res.status(500).json({ error: 'Failed to create NonEmployee', details: error.message });
+        console.error('Error creating resident:', error);
+        res.status(500).json({ error: 'Failed to create Resident account', details: error.message });
     }
 };
 

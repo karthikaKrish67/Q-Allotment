@@ -3,133 +3,620 @@
     {
       "id": 1,
       "username": "admin",
-      "password": "$2b$10$f7blAgbmNgHsYL2LxzTgK.e3aiGUrkqPRPUTnEgCFRC/XrRs2/iHe",
+      "password": "$2b$10$.WUGx9xwGZDoOGWS9rZw7.lWLWFRKaX6Jose8JmZoMprBZOS1b.ue",
       "role": "admin",
-      "createdAt": "2025-12-13T18:01:01.706Z",
-      "updatedAt": "2025-12-13T18:01:01.706Z"
+      "createdAt": "2025-12-23T06:42:08.000Z",
+      "updatedAt": "2025-12-23T06:42:08.000Z"
+    },
+    {
+      "id": 2,
+      "username": "PPC001",
+      "password": "$2b$10$2ZCkAtGOka/LLVbMUSGU.OrONju8ts6XpRJI5Sgy9qBhNFZF.2lLa",
+      "role": "user",
+      "createdAt": "2025-12-26T16:38:44.000Z",
+      "updatedAt": "2025-12-26T16:38:44.000Z"
     }
   ],
   "quarters": [
     {
       "id": 1,
-      "quarterNumber": "R1001",
+      "quarterNumber": "1A",
+      "block": "Block 1",
       "type": "Type I",
-      "status": "Occupied",
-      "createdAt": "2025-12-15T06:48:39.578Z",
-      "updatedAt": "2025-12-15T06:48:53.627Z"
+      "status": "Vacant",
+      "createdAt": "2025-12-23T06:45:23.000Z",
+      "updatedAt": "2025-12-23T06:45:23.000Z"
     },
     {
       "id": 2,
-      "quarterNumber": "19C",
-      "type": "Type I",
-      "status": "Occupied",
-      "createdAt": "2025-12-15T07:17:08.186Z",
-      "updatedAt": "2025-12-15T07:18:05.039Z"
+      "quarterNumber": "2B",
+      "block": "Block 1",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T06:46:38.000Z",
+      "updatedAt": "2025-12-23T06:46:38.000Z"
     },
     {
       "id": 3,
-      "quarterNumber": "Q-101",
-      "type": "Type I",
+      "quarterNumber": "3C",
+      "block": "Block 1",
+      "type": "Type III",
       "status": "Vacant",
-      "createdAt": "2025-12-16T10:35:31.137Z",
-      "updatedAt": "2025-12-16T10:35:31.137Z"
+      "createdAt": "2025-12-23T06:52:24.000Z",
+      "updatedAt": "2025-12-23T06:52:24.000Z"
     },
     {
       "id": 4,
-      "quarterNumber": "Q-231",
+      "quarterNumber": "4A",
+      "block": "Block 1",
       "type": "Type II",
       "status": "Vacant",
-      "createdAt": "2025-12-16T10:39:46.266Z",
-      "updatedAt": "2025-12-16T10:39:46.266Z"
+      "createdAt": "2025-12-23T06:52:36.000Z",
+      "updatedAt": "2025-12-23T06:52:36.000Z"
     },
     {
       "id": 5,
-      "quarterNumber": "18B",
+      "quarterNumber": "5B",
+      "block": "Block 1",
+      "type": "Type IV",
+      "status": "Occupied",
+      "createdAt": "2025-12-23T06:53:01.000Z",
+      "updatedAt": "2025-12-23T09:27:34.000Z"
+    },
+    {
+      "id": 6,
+      "quarterNumber": "6A",
+      "block": "Block 1",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T06:53:13.000Z",
+      "updatedAt": "2025-12-23T06:53:13.000Z"
+    },
+    {
+      "id": 7,
+      "quarterNumber": "7C",
+      "block": "Block 1",
       "type": "Type II",
       "status": "Vacant",
-      "createdAt": "2025-12-18T07:12:14.353Z",
-      "updatedAt": "2025-12-18T07:12:14.353Z"
+      "createdAt": "2025-12-23T06:53:26.000Z",
+      "updatedAt": "2025-12-23T06:53:26.000Z"
+    },
+    {
+      "id": 8,
+      "quarterNumber": "8B",
+      "block": "Block 1",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T06:53:40.000Z",
+      "updatedAt": "2025-12-23T06:53:40.000Z"
+    },
+    {
+      "id": 9,
+      "quarterNumber": "9A",
+      "block": "Block 1",
+      "type": "Type IV",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T06:54:21.000Z",
+      "updatedAt": "2025-12-23T06:54:21.000Z"
+    },
+    {
+      "id": 10,
+      "quarterNumber": "10C",
+      "block": "Block 1",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T06:55:58.000Z",
+      "updatedAt": "2025-12-23T06:55:58.000Z"
+    },
+    {
+      "id": 18,
+      "quarterNumber": "1B",
+      "block": "Block 2",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T07:26:25.000Z",
+      "updatedAt": "2025-12-23T07:26:25.000Z"
+    },
+    {
+      "id": 19,
+      "quarterNumber": "2C",
+      "block": "Block 2",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T07:27:08.000Z",
+      "updatedAt": "2025-12-23T07:27:08.000Z"
+    },
+    {
+      "id": 20,
+      "quarterNumber": "3A",
+      "block": "Block 2",
+      "type": "Type II",
+      "status": "Occupied",
+      "createdAt": "2025-12-23T07:27:43.000Z",
+      "updatedAt": "2025-12-23T09:16:47.000Z"
+    },
+    {
+      "id": 23,
+      "quarterNumber": "4B",
+      "block": "Block 2",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T07:29:26.000Z",
+      "updatedAt": "2025-12-23T07:29:26.000Z"
+    },
+    {
+      "id": 24,
+      "quarterNumber": "5C",
+      "block": "Block 2",
+      "type": "Type IV",
+      "status": "Occupied",
+      "createdAt": "2025-12-23T07:29:39.000Z",
+      "updatedAt": "2025-12-24T09:41:00.000Z"
+    },
+    {
+      "id": 25,
+      "quarterNumber": "6B",
+      "block": "Block 2",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T07:29:57.000Z",
+      "updatedAt": "2025-12-23T07:29:57.000Z"
+    },
+    {
+      "id": 26,
+      "quarterNumber": "7A",
+      "block": "Block 2",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T07:30:12.000Z",
+      "updatedAt": "2025-12-23T07:30:12.000Z"
+    },
+    {
+      "id": 27,
+      "quarterNumber": "8C",
+      "block": "Block 2",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T07:30:42.000Z",
+      "updatedAt": "2025-12-23T07:30:42.000Z"
+    },
+    {
+      "id": 28,
+      "quarterNumber": "9B",
+      "block": "Block 2",
+      "type": "Type IV",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T07:31:44.000Z",
+      "updatedAt": "2025-12-23T07:31:44.000Z"
+    },
+    {
+      "id": 29,
+      "quarterNumber": "10A",
+      "block": "Block 2",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T07:32:04.000Z",
+      "updatedAt": "2025-12-23T07:32:04.000Z"
+    },
+    {
+      "id": 31,
+      "quarterNumber": "1B",
+      "block": "Block 3",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 32,
+      "quarterNumber": "2A",
+      "block": "Block 3",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 33,
+      "quarterNumber": "3C",
+      "block": "Block 3",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 34,
+      "quarterNumber": "4A",
+      "block": "Block 3",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 35,
+      "quarterNumber": "5B",
+      "block": "Block 3",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 36,
+      "quarterNumber": "6A",
+      "block": "Block 3",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 37,
+      "quarterNumber": "7C",
+      "block": "Block 3",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 38,
+      "quarterNumber": "8B",
+      "block": "Block 3",
+      "type": "Type IV",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 39,
+      "quarterNumber": "9A",
+      "block": "Block 3",
+      "type": "Type IV",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 40,
+      "quarterNumber": "1A",
+      "block": "Block 4",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 41,
+      "quarterNumber": "2D",
+      "block": "Block 4",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 42,
+      "quarterNumber": "3B",
+      "block": "Block 4",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 43,
+      "quarterNumber": "4C",
+      "block": "Block 4",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 44,
+      "quarterNumber": "5A",
+      "block": "Block 4",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 45,
+      "quarterNumber": "6B",
+      "block": "Block 4",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 46,
+      "quarterNumber": "7A",
+      "block": "Block 4",
+      "type": "Type III",
+      "status": "Occupied",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T09:15:46.000Z"
+    },
+    {
+      "id": 47,
+      "quarterNumber": "8B",
+      "block": "Block 4",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 48,
+      "quarterNumber": "9A",
+      "block": "Block 4",
+      "type": "Type IV",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 49,
+      "quarterNumber": "10B",
+      "block": "Block 4",
+      "type": "Type IV",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 50,
+      "quarterNumber": "1C",
+      "block": "Block 5",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 51,
+      "quarterNumber": "2B",
+      "block": "Block 5",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 52,
+      "quarterNumber": "3A",
+      "block": "Block 5",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 53,
+      "quarterNumber": "4C",
+      "block": "Block 5",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 54,
+      "quarterNumber": "5A",
+      "block": "Block 5",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 55,
+      "quarterNumber": "6C",
+      "block": "Block 5",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 56,
+      "quarterNumber": "7A",
+      "block": "Block 5",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 57,
+      "quarterNumber": "8C",
+      "block": "Block 5",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 58,
+      "quarterNumber": "9B",
+      "block": "Block 5",
+      "type": "Type IV",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 59,
+      "quarterNumber": "10C",
+      "block": "Block 5",
+      "type": "Type IV",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:09:28.000Z",
+      "updatedAt": "2025-12-23T13:09:28.000Z"
+    },
+    {
+      "id": 60,
+      "quarterNumber": "10B",
+      "block": "Block 3",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T13:12:36.000Z",
+      "updatedAt": "2025-12-23T13:12:36.000Z"
+    },
+    {
+      "id": 61,
+      "quarterNumber": "10C",
+      "block": "Block 1",
+      "type": "Type II",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T11:32:05.000Z",
+      "updatedAt": "2025-12-23T11:32:05.000Z"
+    },
+    {
+      "id": 62,
+      "quarterNumber": "10C",
+      "block": "Block 2",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T11:32:27.000Z",
+      "updatedAt": "2025-12-23T11:32:27.000Z"
+    },
+    {
+      "id": 63,
+      "quarterNumber": "1A",
+      "block": "Block 1",
+      "type": "Type III",
+      "status": "Vacant",
+      "createdAt": "2025-12-23T11:34:34.000Z",
+      "updatedAt": "2025-12-23T11:34:34.000Z"
+    },
+    {
+      "id": 64,
+      "quarterNumber": "2B",
+      "block": "Block 2",
+      "type": "Type I",
+      "status": "Vacant",
+      "createdAt": "2025-12-24T09:38:10.000Z",
+      "updatedAt": "2025-12-24T09:38:10.000Z"
     }
   ],
-  "unEmployees": [
+  "nonEmployees": [
+    {
+      "id": 1,
+      "name": "Karthy",
+      "privatePartyCode": "R101",
+      "address": "Block 5",
+      "phoneNumber": "9632547812",
+      "createdAt": "2025-12-23T09:05:07.000Z",
+      "updatedAt": "2025-12-23T09:07:27.000Z"
+    },
     {
       "id": 2,
-      "name": "Karthy",
-      "privatePartyCode": "R1001",
-      "address": "block 10,near TA office",
-      "phoneNumber": "9632145879",
-      "createdAt": "2025-12-15T06:55:15.753Z",
-      "updatedAt": "2025-12-15T06:55:15.753Z"
+      "name": "Surya",
+      "privatePartyCode": "P203",
+      "address": "Block 4",
+      "phoneNumber": "9876543454",
+      "createdAt": "2025-12-23T09:05:54.000Z",
+      "updatedAt": "2025-12-23T09:05:54.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Krish",
+      "privatePartyCode": "H603",
+      "address": "Block 2",
+      "phoneNumber": "8967452310",
+      "createdAt": "2025-12-23T09:08:01.000Z",
+      "updatedAt": "2025-12-23T09:08:01.000Z"
+    },
+    {
+      "id": 4,
+      "name": "Hari",
+      "privatePartyCode": "T026",
+      "address": "Block 1",
+      "phoneNumber": "7896542352",
+      "createdAt": "2025-12-23T09:12:00.000Z",
+      "updatedAt": "2025-12-23T09:12:00.000Z"
+    },
+    {
+      "id": 5,
+      "name": "Balu ",
+      "privatePartyCode": "S954",
+      "address": "Block 3",
+      "phoneNumber": "6356987689",
+      "createdAt": "2025-12-23T09:13:22.000Z",
+      "updatedAt": "2025-12-23T09:13:42.000Z"
+    },
+    {
+      "id": 6,
+      "name": "Demo Res",
+      "privatePartyCode": "PPC001",
+      "address": "123 Demo St",
+      "phoneNumber": "9876543210",
+      "createdAt": "2025-12-26T16:38:44.000Z",
+      "updatedAt": "2025-12-26T17:00:55.000Z"
     }
   ],
   "allotments": [
     {
       "id": 1,
-      "allotmentDate": "2025-12-15T06:48:53.620Z",
+      "allotmentDate": "2025-12-23T09:14:49.000Z",
       "status": "Active",
-      "createdAt": "2025-12-15T06:48:53.620Z",
-      "updatedAt": "2025-12-15T06:48:53.620Z",
-      "UnEmployeeId": null,
-      "QuarterId": 1
+      "createdAt": "2025-12-23T09:14:49.000Z",
+      "updatedAt": "2025-12-23T09:14:49.000Z",
+      "NonEmployeeId": 1,
+      "QuarterId": 5
     },
     {
       "id": 2,
-      "allotmentDate": "2025-12-15T07:18:05.031Z",
+      "allotmentDate": "2025-12-23T09:15:46.000Z",
       "status": "Active",
-      "createdAt": "2025-12-15T07:18:05.032Z",
-      "updatedAt": "2025-12-15T07:18:05.032Z",
-      "UnEmployeeId": 2,
-      "QuarterId": 2
-    }
-  ],
-  "bills": [
-    {
-      "id": 1,
-      "month": "december 2025",
-      "rentAmount": 3000,
-      "maintenanceAmount": 100,
-      "totalAmount": 3100,
-      "isPaid": true,
-      "createdAt": "2025-12-15T06:49:40.972Z",
-      "updatedAt": "2025-12-15T06:49:45.593Z",
-      "UnEmployeeId": null
-    },
-    {
-      "id": 2,
-      "month": "DEC 2025",
-      "rentAmount": 2500,
-      "maintenanceAmount": 100,
-      "totalAmount": 2600,
-      "isPaid": false,
-      "createdAt": "2025-12-15T07:21:05.000Z",
-      "updatedAt": "2025-12-15T07:21:05.000Z",
-      "UnEmployeeId": 2
-    }
-  ],
-  "complaints": [
-    {
-      "id": 1,
-      "description": "Electricity issue",
-      "status": "Completed",
-      "createdAt": "2025-12-15T06:56:01.688Z",
-      "updatedAt": "2025-12-15T06:59:22.694Z",
-      "UnEmployeeId": 2
-    },
-    {
-      "id": 2,
-      "description": "water supply issue",
-      "status": "Completed",
-      "createdAt": "2025-12-15T06:58:46.609Z",
-      "updatedAt": "2025-12-15T07:19:17.411Z",
-      "UnEmployeeId": 2
+      "createdAt": "2025-12-23T09:15:46.000Z",
+      "updatedAt": "2025-12-23T09:15:46.000Z",
+      "NonEmployeeId": 2,
+      "QuarterId": 46
     },
     {
       "id": 3,
-      "description": "doors damaged",
-      "status": "Pending",
-      "createdAt": "2025-12-18T07:35:03.716Z",
-      "updatedAt": "2025-12-18T07:35:03.716Z",
-      "UnEmployeeId": 2
+      "allotmentDate": "2025-12-23T09:16:47.000Z",
+      "status": "Active",
+      "createdAt": "2025-12-23T09:16:47.000Z",
+      "updatedAt": "2025-12-23T09:16:47.000Z",
+      "NonEmployeeId": 3,
+      "QuarterId": 20
+    },
+    {
+      "id": 4,
+      "allotmentDate": "2025-12-23T09:26:04.000Z",
+      "status": "Active",
+      "createdAt": "2025-12-23T09:26:04.000Z",
+      "updatedAt": "2025-12-23T09:26:04.000Z",
+      "NonEmployeeId": 1,
+      "QuarterId": 5
+    },
+    {
+      "id": 5,
+      "allotmentDate": "2025-12-23T09:27:34.000Z",
+      "status": "Active",
+      "createdAt": "2025-12-23T09:27:34.000Z",
+      "updatedAt": "2025-12-23T09:27:34.000Z",
+      "NonEmployeeId": 1,
+      "QuarterId": 5
+    },
+    {
+      "id": 6,
+      "allotmentDate": "2025-12-24T09:41:00.000Z",
+      "status": "Active",
+      "createdAt": "2025-12-24T09:41:00.000Z",
+      "updatedAt": "2025-12-24T09:41:00.000Z",
+      "NonEmployeeId": 5,
+      "QuarterId": 24
     }
-  ]
+  ],
+  "bills": [],
+  "complaints": []
 }

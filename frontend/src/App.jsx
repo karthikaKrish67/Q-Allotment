@@ -8,6 +8,7 @@ import { AuthProvider } from './context/AuthContext';
 import Dashboard from './pages/Dashboard';
 import NonEmployees from './pages/NonEmployees';
 import Quarters from './pages/Quarters';
+import UserDashboard from './pages/UserDashboard';
 
 import Billing from './pages/Billing';
 import Complaints from './pages/Complaints';
@@ -36,6 +37,7 @@ function App() {
           <Route path="/quarters" element={<Layout><Quarters /></Layout>} />
           <Route path="/billing" element={<Layout><Billing /></Layout>} />
           <Route path="/complaints" element={<Layout><Complaints /></Layout>} />
+          <Route path="/user-dashboard" element={<UserDashboard />} />
         </Route>
       </Routes>
     </AuthProvider>

@@ -17,6 +17,7 @@ require('./models/Quarter');
 require('./models/Allotment');
 require('./models/Bill');
 require('./models/Complaint');
+require('./models/Block');
 
 const authRoutes = require('./routes/auth');
 const nonEmployeeRoutes = require('./routes/nonEmployees');
@@ -24,6 +25,7 @@ const quarterRoutes = require('./routes/quarters');
 const allotmentRoutes = require('./routes/allotments');
 const billRoutes = require('./routes/bills');
 const complaintRoutes = require('./routes/complaints');
+const blockRoutes = require('./routes/blocks');
 
 // Routes
 app.use('/api/auth', authRoutes);
@@ -32,6 +34,7 @@ app.use('/api/quarters', quarterRoutes);
 app.use('/api/allotments', allotmentRoutes);
 app.use('/api/bills', billRoutes);
 app.use('/api/complaints', complaintRoutes);
+app.use('/api/blocks', blockRoutes);
 
 app.get('/', (req, res) => {
     res.send('Residency Management System API');

@@ -1,0 +1,25 @@
+--- New Login Attempt ---
+Body: {"phoneNumber":"9876543210","otp":"1234"}
+Target Phone: '9876543210'
+Total Residents: 6
+DB Resident: Name=Karthy, Phone='9632547812', Code=R101
+DB Resident: Name=Surya, Phone='9876543454', Code=P203
+DB Resident: Name=Krish, Phone='8967452310', Code=H603
+DB Resident: Name=Hari, Phone='7896542352', Code=T026
+DB Resident: Name=Balu , Phone='6356987689', Code=S954
+DB Resident: Name=Demo Res, Phone='1112223333', Code=PPC001
+Exact Match Result: NULL
+Loose Match Result: NULL
+Returning 404: Phone not registered
+--- New Login Attempt ---
+Body: {"phoneNumber":"9876543210","otp":"1234"}
+Target Phone: '9876543210'
+Total Residents: 6
+DB Resident: Name=Karthy, Phone='9632547812', Code=R101
+DB Resident: Name=Surya, Phone='9876543454', Code=P203
+DB Resident: Name=Krish, Phone='8967452310', Code=H603
+DB Resident: Name=Hari, Phone='7896542352', Code=T026
+DB Resident: Name=Balu , Phone='6356987689', Code=S954
+DB Resident: Name=Demo Res, Phone='9876543210', Code=PPC001
+Exact Match Result: Demo Res
+User Match: PPC001
